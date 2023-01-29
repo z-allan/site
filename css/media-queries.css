@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/*
+    < 768px        - Mobile First (style.css)
+    768px - 992px  - Tablet
+    992px - 1200px - PC / Notes
+    > 1200px       - Telas maiores (TV, Monitor 4k)
+*/
