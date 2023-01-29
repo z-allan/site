@@ -9,48 +9,33 @@
 
 @media screen and (min-width: 768px) {
     /* ALTERAR O MENU */
-    header > div#menu-container {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 80px;
-        padding: 10px;
-        max-width: 1000px;
+    header > div#menu-container > label.burger-button {
+        display: none;
     }
 
-    header > div#menu-container > h1#nome {
-        min-width: 328px;
-    }
-
-    header>div#menu-container>nav {
+    header > div#menu-container > nav {
         position: relative;
         top: 0px;
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
+        height: 80px;
         transform: scaleX(1);
     }
 
-    header>div#menu-container>label.burguer-button {
-        display: none;
-    }
-
-    header>div#menu-container>nav a:first-child {
-        border-top: 0px
-    }
-
-    header>div#menu-container>nav a:not(:last-child) {
-        border-bottom: 0px
-    }
-
-    header>div#menu-container>nav>a {
+    header > div#menu-container > nav > a {
+        padding: 10px;
+        align-self: center;
         font-size: 1.2rem;
         color: var(--cor4);
         background-color: var(--cor2);
+        border: 0px;
     }
 
-    header>div#menu-container>nav>a:hover {
+    header > div#menu-container > nav > a:hover {
         color: var(--cor1);
+        background-color: var(--cor2);
+        border: 0px;
     }
 }
 

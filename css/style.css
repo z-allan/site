@@ -25,97 +25,98 @@ header {
     background-color: var(--cor2);
 }
 
-header > div#menu-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 80px;
-    padding: 10px;
-}
-
-header > div#menu-container > h1#nome {
-    color: var(--cor4);
-    font-size: 1.75em;
-    padding: 10px;
-}
-
-header > div#menu-container > #checkbox-menu {
+header > div#menu-container > input#checkbox-burger {
     display: none;
 }
 
-header > div#menu-container > label#burguer-button {
+header > div#menu-container {
     display: flex;
+    justify-content: space-between;
+    align-content: center;
+    height: 80px;
 }
 
-header > div#menu-container > nav {
-    position: absolute;
-    right: 0;
-    top: 80px;
-    flex-direction: column;
-    width: 80%;
-    transform: scaleX(0);
+header > div#menu-container > h1#nome {
+    padding: 20px 10px;
+    color: var(--cor4);
+    font-size: 1.75em;
+    flex: 1 1 90%;
+    height: 80px;
 }
 
-header > div#menu-container > nav > a {
-    display: flex;
-    justify-content: center;
-    font-size: 1.2em;
-    text-decoration: none;
-    padding: 15px;
-    color: var(--cor1);
-    background-color: var(--cor4);
-    cursor: pointer;
+header > div#menu-container > label.burger-button {
+    padding: 26px 10px;
+    height: 80px;
 }
 
-header > div#menu-container > label.burguer-button {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    height: 22px;
-    width: 30px;
-}
-
-header > div#menu-container > label.burguer-button > span {
-    position: absolute;
+header > div#menu-container > label.burger-button > span {
     display: block;
     height: 5px;
-    width: 100%;
+    margin: 0px 0px 2.5px 0px;
+    width: 30px;
     border-radius: 30px;
     transition: 0.25 ease-in-out;
     background-color: var(--cor4);
 }
 
-header > div#menu-container > label.burguer-button > span:nth-child(1) { top: 0px; }
-header > div#menu-container > label.burguer-button > span:nth-child(2) { top: 8px; }
-header > div#menu-container > label.burguer-button > span:nth-child(3) { top: 16px; }
+header > div#menu-container > nav {
+    position: absolute;
+    width: 80%;
+    top: 80px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
 
-header > div#menu-container > input#checkbox-menu:checked+label span:nth-child(1) {
-    transform: rotate(-45deg);
-    top: 8px;
+    transform: scaleX(0);
 }
 
-header > div#menu-container > input#checkbox-menu:checked+label span:nth-child(2) {
+header > div#menu-container > nav > a {
+    font-size: 1.2em;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    padding: 15px;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    border: 1px solid var(--cor3);
+    cursor: pointer;
+}
+
+header > div#menu-container > nav > a:hover {
+    background-color: var(--cor3);
+    border: 1px solid var(--cor4);
+}
+
+/*
+    Rotaciona o span de cima do burger menu para formar a perna do X
+    Oculta o span do meio do burger 
+    Rotaciona o span de baixo do burger para formar a outra perna do X
+*/
+header > div#menu-container > input#checkbox-burger:checked+label span:nth-child(1) {
+    position: absolute;
+    top:34px;
+    transform: rotate(-45deg);
+}
+
+header > div#menu-container > input#checkbox-burger:checked+label span:nth-child(2) {
     opacity: 0;
 }
 
-header > div#menu-container > input#checkbox-menu:checked+label span:nth-child(3) {
+header > div#menu-container > input#checkbox-burger:checked+label span:nth-child(3) {
+    position: absolute;
+    top:34px;
     transform: rotate(45deg);
-    top: 8px;
 }
 
-header > div#menu-container > input#checkbox-menu:checked~nav {
+/*
+    Faz o menu aparecer ao clica no label (vai dar check do checkbox invisivel)
+*/
+header > div#menu-container > input#checkbox-burger:checked~nav {
     transform: scaleX(1);
     transform-origin: right;
     transition: transform 0.5s;
 }
 
-header > div#menu-container > nav a:first-child {
-    border-top: 1px solid var(--cor1);
-}
-
-header > div#menu-container > nav a:not(:last-child) {
-    border-bottom: 1px solid var(--cor1);
-}
 
 /*
 
