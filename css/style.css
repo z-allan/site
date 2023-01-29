@@ -18,67 +18,157 @@
 
 body {
     background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
-    height: 100vh;
-    width: 100vw;
     min-width: 320px;
 }
 
 header {
-    display: flex;
-    flex-direction: row;
     background-color: var(--cor2);
-    height: 80px;
 }
 
-header > h1 {
-    color: var(--cor4);
-    margin: auto;
-    font-size: 1.75em;
-}
-
-header > nav > a {
-    text-decoration: none;
-    color: var(--cor4);
-    font-size: 1em;
-}
-
-main > #cta-area {
+header > div#menu-container {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px;
+}
+
+header > div#menu-container > h1#nome {
+    color: var(--cor4);
+    font-size: 1.75em;
+    padding: 10px;
+}
+
+header > div#menu-container > #checkbox-menu {
+    display: none;
+}
+
+header > div#menu-container > label#burguer-button {
+    display: flex;
+}
+
+header > div#menu-container > nav {
+    position: absolute;
+    right: 0;
+    top: 80px;
     flex-direction: column;
+    width: 80%;
+    transform: scaleX(0);
+}
+
+header > div#menu-container > nav > a {
+    display: flex;
+    justify-content: center;
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 15px;
+    color: var(--cor1);
+    background-color: var(--cor4);
+    cursor: pointer;
+}
+
+header > div#menu-container > label.burguer-button {
+    cursor: pointer;
+    position: relative;
+    display: block;
+    height: 22px;
+    width: 30px;
+}
+
+header > div#menu-container > label.burguer-button > span {
+    position: absolute;
+    display: block;
+    height: 5px;
+    width: 100%;
+    border-radius: 30px;
+    transition: 0.25 ease-in-out;
+    background-color: var(--cor4);
+}
+
+header > div#menu-container > label.burguer-button > span:nth-child(1) { top: 0px; }
+header > div#menu-container > label.burguer-button > span:nth-child(2) { top: 8px; }
+header > div#menu-container > label.burguer-button > span:nth-child(3) { top: 16px; }
+
+header > div#menu-container > input#checkbox-menu:checked+label span:nth-child(1) {
+    transform: rotate(-45deg);
+    top: 8px;
+}
+
+header > div#menu-container > input#checkbox-menu:checked+label span:nth-child(2) {
+    opacity: 0;
+}
+
+header > div#menu-container > input#checkbox-menu:checked+label span:nth-child(3) {
+    transform: rotate(45deg);
+    top: 8px;
+}
+
+header > div#menu-container > input#checkbox-menu:checked~nav {
+    transform: scaleX(1);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+header > div#menu-container > nav a:first-child {
+    border-top: 1px solid var(--cor1);
+}
+
+header > div#menu-container > nav a:not(:last-child) {
+    border-bottom: 1px solid var(--cor1);
+}
+
+/*
+
+MAIN AREA
+
+*/
+
+section.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
     padding: 50px 10px;
     height: 88vh;
     background-color: var(--cor5);
+    align-items: center;
     text-align: center;
+    margin: auto;
 }
 
-main > #cta-area > h2 {
-    padding: 15px 0px;
-    font-size: 1.5em;
+div.flex-items {
+    padding: 20px;
 }
 
-main > #cta-area > p {
-    padding: 10px 0px;
+div.flex-items > p {
     font-size: 1.25em;
+    padding: 20px 0px;
 }
 
-main > #cta-area > #cta-area-1 {
-    padding: 15px 0px;
-    font-size: 1.15em;
+div.flex-items > a {
+    display: block;
+    font-size: 1.8em;
+    padding: 20px 0px;
+}
+
+div.item-1 {
+    flex: 1 1 100%;
+    background-color: var(--cor1);
+}
+
+
+div.item-1 > h2 {
+    font-size: 1.75em;
+}
+
+div.item-2 {
+    flex: 1 1 100%;
     background-color: var(--cor3);
 }
 
-main > #cta-area > #cta-area-1 > a {
-    font-size: 1.8em;
-}
-
-main > #cta-area > #cta-area-2 {
-    padding: 15px 0px;
-    font-size: 1.15em;
+div.item-3 {
+    flex: 1 1 100%;
     background-color: var(--cor2);
-}
-
-main > #cta-area > #cta-area-2 > a {
-    font-size: 1.8em;
 }
 
 main > #form-area {

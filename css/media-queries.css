@@ -7,14 +7,131 @@
     > 1440px       - Telas maiores (TV, Monitor 4k)
 */
 
-@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
-    
+@media screen and (min-width: 768px) {
+    /* ALTERAR O MENU */
+    header > div#menu-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 10px;
+        max-width: 1000px;
+    }
+
+    header > div#menu-container > h1#nome {
+        min-width: 328px;
+    }
+
+    header>div#menu-container>nav {
+        position: relative;
+        top: 0px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        transform: scaleX(1);
+    }
+
+    header>div#menu-container>label.burguer-button {
+        display: none;
+    }
+
+    header>div#menu-container>nav a:first-child {
+        border-top: 0px
+    }
+
+    header>div#menu-container>nav a:not(:last-child) {
+        border-bottom: 0px
+    }
+
+    header>div#menu-container>nav>a {
+        font-size: 1.2rem;
+        color: var(--cor4);
+        background-color: var(--cor2);
+    }
+
+    header>div#menu-container>nav>a:hover {
+        color: var(--cor1);
+    }
 }
 
-@media screen and (min-width: 992px) and (max-width: 1440px) { /* PC */
-    
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    /* TABLET */
+    div.item-1 {
+        flex: 1 1 100%;
+    }
+
+    div.item-2 {
+        flex: 1 1 50%;
+        background-color: var(--cor3);
+    }
+
+    div.item-3 {
+        flex: 1 1 50%;
+        background-color: var(--cor2);
+    }
 }
 
-@media screen and (min-width: 1440px) { /* TV */
-    
+@media screen and (min-width: 992px) and (max-width: 1440px) {
+    /* PC */
+    header>nav {
+        text-align: center;
+    }
+
+    div.item-1 {
+        flex: 1 1 100%;
+    }
+
+    div.item-2 {
+        flex: 1 1 50%;
+        background-color: var(--cor3);
+    }
+
+
+    div.item-3 {
+        flex: 1 1 50%;
+        background-color: var(--cor2);
+    }
+
+    div#menu-container {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+}
+
+@media screen and (min-width: 1440px) {
+    /* TV */
+    header>nav {
+        text-align: center;
+    }
+
+    div.item-1 {
+        flex: 1 1 34%;
+    }
+
+    div.item-2 {
+        flex: 1 1 33%;
+        background-color: var(--cor3);
+    }
+
+    div.item-3 {
+        flex: 1 1 33%;
+        background-color: var(--cor2);
+    }
+
+    div#menu-container {
+        max-width: 1000px;
+        margin: auto;
+    }
+
+    main {
+        max-width: 1000px;
+        margin: auto;
+    }
+
 }

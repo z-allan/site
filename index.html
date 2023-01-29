@@ -12,22 +12,32 @@
 
 <body>
     <header>
-        <h1>Allan Zimmermann</h1>
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Sobre</a>
-            <a href="#form-area">Contato</a>
-        </nav>
+        <div id="menu-container">
+            <h1 id="nome">Allan Zimmermann</h1>
+            <input type="checkbox" id="checkbox-menu" />
+            <label class="burguer-button" for="checkbox-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+            <nav>
+                <a href="#">Home</a>
+                <a href="#">Sobre</a>
+                <a href="#form-area">Contato</a>
+            </nav>
+        </div>
     </header>
     <main>
-        <section id="cta-area">
-            <h2>Seja bem vindo!</h2>
-            <p>Este site foi desenvolvido utilizando apenas HTML5 e CSS3,<br> sem frameworks ou bibliotecas.</p>
-            <div id="cta-area-1">
+        <section class="flex-container">
+            <div class="flex-items item-1">
+                <h2>Seja bem vindo!</h2>
+                <p>Este site foi desenvolvido utilizando apenas HTML5 e CSS3,<br> sem frameworks ou bibliotecas.</p>
+            </div>
+            <div class="flex-items item-2">
                 <p>Se você deseja conhecer um pouco do meu trabalho</p>
                 <a href="#">Clique aqui</a>
             </div>
-            <div id="cta-area-2">
+            <div class="flex-items item-3">
                 <p>Vamos bater um papo</p>
                 <a href="#">Entrar em contato</a>
             </div>
