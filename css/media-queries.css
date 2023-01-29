@@ -3,6 +3,18 @@
 /*
     < 768px        - Mobile First (style.css)
     768px - 992px  - Tablet
-    992px - 1200px - PC / Notes
-    > 1200px       - Telas maiores (TV, Monitor 4k)
+    992px - 1440px - PC / Notes
+    > 1440px       - Telas maiores (TV, Monitor 4k)
 */
+
+@media screen and (min-width: 768px) and (max-width: 992px) { /* TABLET */
+    
+}
+
+@media screen and (min-width: 992px) and (max-width: 1440px) { /* PC */
+    
+}
+
+@media screen and (min-width: 1440px) { /* TV */
+    
+}

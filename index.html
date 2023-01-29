@@ -1,24 +1,44 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media-queries.css">
     <title>Allan Zimmermann</title>
-    <style>
-        body {
-            background: rgba(167, 167, 167, 0.603);
-        }
-        
-        h1 {
-            text-align: center;
-            font-size: 4em;
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-        }
-
-    </style>
 </head>
+
 <body>
-    <h1>Site em construção</h1>
+    <header>
+        <h1>Allan Zimmermann</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#form-area">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="cta-area">
+            <h2>Seja bem vindo!</h2>
+            <p>Este site foi desenvolvido utilizando apenas HTML5 e CSS3,<br> sem frameworks ou bibliotecas.</p>
+            <div id="cta-area-1">
+                <p>Se você deseja conhecer um pouco do meu trabalho</p>
+                <a href="#">Clique aqui</a>
+            </div>
+            <div id="cta-area-2">
+                <p>Vamos bater um papo</p>
+                <a href="#">Entrar em contato</a>
+            </div>
+        </section>
+        <section id="form-area">
+            <form>
+                <label for="teste">Teste</label>
+                <input type="text" id="teste">
+            </form>
+        </section>
+    </main>
 </body>
+
 </html>

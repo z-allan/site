@@ -1,1 +1,91 @@
 @charset "UTF-8";
+
+:root {
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+    --cor1: rgb(145, 200, 214);
+    --cor2: rgb(73, 155, 175);
+    --cor3: rgb(0, 120, 150);
+    --cor4: rgb(8, 52, 63);
+    --cor5: rgb(177, 116, 59);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: var(--fonte-padrao);
+}
+
+body {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor4));
+    height: 100vh;
+    width: 100vw;
+    min-width: 320px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor2);
+    height: 80px;
+}
+
+header > h1 {
+    color: var(--cor4);
+    margin: auto;
+    font-size: 1.75em;
+}
+
+header > nav > a {
+    text-decoration: none;
+    color: var(--cor4);
+    font-size: 1em;
+}
+
+main > #cta-area {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 10px;
+    height: 88vh;
+    background-color: var(--cor5);
+    text-align: center;
+}
+
+main > #cta-area > h2 {
+    padding: 15px 0px;
+    font-size: 1.5em;
+}
+
+main > #cta-area > p {
+    padding: 10px 0px;
+    font-size: 1.25em;
+}
+
+main > #cta-area > #cta-area-1 {
+    padding: 15px 0px;
+    font-size: 1.15em;
+    background-color: var(--cor3);
+}
+
+main > #cta-area > #cta-area-1 > a {
+    font-size: 1.8em;
+}
+
+main > #cta-area > #cta-area-2 {
+    padding: 15px 0px;
+    font-size: 1.15em;
+    background-color: var(--cor2);
+}
+
+main > #cta-area > #cta-area-2 > a {
+    font-size: 1.8em;
+}
+
+main > #form-area {
+    padding: 40px 15px;
+    background-color: var(--cor4);
+}
+
+main > #form-area > form > label {
+    color: var(--cor1);
+}
