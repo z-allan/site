@@ -43,9 +43,48 @@
             </div>
         </section>
         <section id="form-area">
-            <form>
-                <label for="teste">Teste</label>
-                <input type="text" id="teste">
+            <iframe name="dummyframe" id="dummyframe" onload="document.getElementById('form').reset()"></iframe>
+            <form id="form"
+                action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSemB98eiqnr6gOF20RGNIiGOv8LT6GjNJzOPcCY07FPoaFeQw/formResponse"
+                target="dummyframe" onsubmit="alert('Obrigado!');" method="POST">
+                <h2>Formulário de Contato</h2>
+                <p>Seu nome:</p>
+                <input type="text" name="entry.644179727" size=40 maxlength="40" placeholder="José da Silva" required />
+                <p>Seu e-mail:</p>
+                <input type="email" name="entry.453179510" size=40 maxlength="40" placeholder="contato@teste.com"
+                    required />
+                <p>Qual a sua necessidade:</p>
+                <textarea name="entry.2007835393" cols="30" rows="4" required
+                    placeholder="Gostaria de bater um papo com você."></textarea>
+                <p>Posso atuar remotamente?</p>
+                <input type="radio" class="checks" name="entry.1349308541" value="Sim" id="remote-radio1" />
+                <label for="remote-radio1">Sim</label>
+                <br>
+                <input type="radio" class="checks" name="entry.1349308541" value="Nao" id="remote-radio2" />
+                <label for="remote-radio2">Não</label>
+                <br>
+                <p>Que tipo de atuação você necessita:</p>
+                <select name="entry.1385929678">
+                    <option value="-">-</option>
+                    <option value="Front-End">Front-End</option>
+                    <option value="Back-End">Back-End</option>
+                    <option value="Full-Stack">Full-Stack</option>
+                </select>
+                <p>Outros conhecimentos necessários:</p>
+                <input type="checkbox" class="checks" id="checkbox-do" name="entry.270987808" value="DevOps">
+                <label for="checkbox-do">DevOps</label>
+                <br>
+                <input type="checkbox" class="checks" id="checkbox-ad" name="entry.270987808" value="Analise de Dados">
+                <label for="checkbox-ad">Análise de Dados</label>
+                <br>
+                <input type="checkbox" class="checks" id="checkbox-gp" name="entry.270987808"
+                    value="Gerenciamento de Projetos">
+                <label for="checkbox-gp">Gerenciamento de Projetos</label>
+                <br>
+                <input type="checkbox" class="checks" id="checkbox-other" name="entry.270987808" value="Outros">
+                <label for="checkbox-other">Outros</label>
+                <br>
+                <input type="submit" id="submit-button" value="ENVIAR" />
             </form>
         </section>
     </main>
