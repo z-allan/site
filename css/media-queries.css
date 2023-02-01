@@ -87,6 +87,17 @@
         margin: auto;
     }
 
+    div.item-0 {
+        background-image: url(../img/bg-pc-default.jpg);
+        background-position: top center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        opacity: 0.5;
+        z-index: 0;
+    }
+    
+
 }
 
 @media screen and (min-width: 1440px) {
