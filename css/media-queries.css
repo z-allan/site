@@ -54,6 +54,14 @@
         flex: 1 1 50%;
         background-color: var(--cor2);
     }
+
+    div.item-0 {
+        background-image: url(../img/bg-tablet.jpg);
+        background-position: bottom center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1440px) {
@@ -71,7 +79,6 @@
         background-color: var(--cor3);
     }
 
-
     div.item-3 {
         flex: 1 1 50%;
         background-color: var(--cor2);
@@ -88,13 +95,11 @@
     }
 
     div.item-0 {
-        background-image: url(../img/bg-pc-default.jpg);
-        background-position: top center;
+        background-image: url(../img/bg-pc.jpg);
+        background-position: center center;
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-        opacity: 0.5;
-        z-index: 0;
     }
     
 
@@ -128,6 +133,13 @@
     main {
         max-width: 1000px;
         margin: auto;
+    }
+
+    div.item-0 {
+        background-image: url(../img/bg-tv.jpg);
+        background-position: left top;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
     }
 
 }
