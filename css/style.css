@@ -3,14 +3,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;600;700;800&display=swap');
 
 :root {
-    --cor1: #F2F2F2; 
-    --cor2: #6F96A6; 
+    --cor1: #F2F2F2;
+    --cor2: #6F96A6;
     --cor3: #5990D9;
-    --cor4: #2D3940; 
+    --cor4: #2D3940;
     --cor5: #D9B282;
 
     --fonte-icon: 'Caveat', cursive;
-    --fonte-padrao: 'Heebo', sans-serif; 
+    --fonte-padrao: 'Heebo', sans-serif;
 }
 
 /* MOBILE FIRST */
@@ -32,7 +32,7 @@ header {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
 }
 
-div#menu-container > input#checkbox-burger {
+div#menu-container>input#checkbox-burger {
     display: none;
 }
 
@@ -55,7 +55,7 @@ label.burger-button {
     padding: 15px 10px;
 }
 
-label.burger-button > span {
+label.burger-button>span {
     display: block;
     height: 5px;
     margin: 0px 0px 2.5px 0px;
@@ -65,7 +65,7 @@ label.burger-button > span {
     background-color: var(--cor4);
 }
 
-div#menu-container > nav {
+div#menu-container>nav {
     position: absolute;
     width: 80%;
     top: 80px;
@@ -76,7 +76,7 @@ div#menu-container > nav {
     transform: scaleX(0);
 }
 
-div#menu-container > nav > a {
+div#menu-container>nav>a {
     font-size: 1.2em;
     text-align: center;
     justify-content: center;
@@ -88,7 +88,7 @@ div#menu-container > nav > a {
     cursor: pointer;
 }
 
-div#menu-container > nav > a:hover {
+div#menu-container>nav>a:hover {
     background-color: var(--cor5);
     color: var(--cor4);
     border: 1px solid var(--cor2);
@@ -101,7 +101,7 @@ div#menu-container > nav > a:hover {
 */
 input#checkbox-burger:checked+label span:nth-child(1) {
     position: absolute;
-    top:34px;
+    top: 34px;
     transform: rotate(-45deg);
 }
 
@@ -111,7 +111,7 @@ input#checkbox-burger:checked+label span:nth-child(2) {
 
 input#checkbox-burger:checked+label span:nth-child(3) {
     position: absolute;
-    top:34px;
+    top: 34px;
     transform: rotate(45deg);
 }
 
@@ -122,6 +122,7 @@ input#checkbox-burger:checked~nav {
     transform: scaleX(1);
     transform-origin: right;
     transition: transform 0.5s;
+    z-index: 999;
 }
 
 
@@ -132,17 +133,18 @@ input#checkbox-burger:checked~nav {
 */
 
 main {
-    background-color: whitesmoke
-    z-index: -1; 
+    background-color: whitesmoke;
+    z-index: -1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
 }
 
 section.flex-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 50px 10px;
+    padding: 15px 10px;
     height: 88vh;
     align-items: center;
+    align-content: center;
     text-align: center;
     margin: auto;
     position: relative;
@@ -160,47 +162,73 @@ div.item-0 {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.4;
-    z-index: 0;
+    z-index: 1;
 }
 
 div.flex-items {
+    z-index: 2;
+}
+
+div.flex-items>p {
     padding: 20px;
-    z-index: 10;
+    font-size: 1.2em;
+    width: 350px;
+    margin: auto;
 }
 
-div.flex-items > p {
-    font-size: 1.25em;
-    padding: 20px 0px;
-}
-
-div.flex-items > a {
+div.flex-items>a {
     display: block;
     font-size: 1.8em;
-    padding: 20px 0px;
+    margin: 20px auto;
+    text-decoration: none;
+    background-color: var(--cor4);
+    width: 225px;
+    padding: 15px;
+    border-radius: 40px;
+    color: var(--cor5);
+    text-shadow: 0px 0px 5px rgba(252, 255, 104, 0.55); 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+}
+
+div.flex-items>a:hover {
+    background-color: var(--cor2);
+    color: var(--cor1);
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.5); ;
+    transform: translate(0px, -5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .2s, border 1s;
 }
 
 div.item-1 {
     flex: 1 1 100%;
-    color: var(--cor1);
+    color: var(--cor4);
     font-weight: 500;
-    text-shadow: 0px 0px 3px rgb(236, 236, 236);
-    font-size: 1.1em;
+    text-shadow: 0px 0px 7px rgba(242, 242, 242, 0.550);
 }
 
 
-div.item-1 > h2 {
-    font-size: 2em;
+div.item-1>h2 {
+    font-size: 2.5em;
     color: var(--cor1);
+    text-shadow: 0px 0px 7px rgba(45, 57, 64, 0.550);
     font-weight: 800;
 }
 
 div.item-2 {
+    color: var(--cor4);
+    font-weight: 700;
+    text-shadow: 0px 0px 7px rgba(242, 242, 242, 0.550);
     flex: 1 1 100%;
 }
 
 div.item-3 {
+    color: var(--cor4);
+    font-weight: 700;
+    text-shadow: 0px 0px 7px rgba(242, 242, 242, 0.550);
     flex: 1 1 100%;
 }
+
+
 
 /*
 
@@ -254,10 +282,14 @@ section#form-area #submit-button {
     background-color: var(--cor5);
     cursor: pointer;
     border-radius: 50px;
-} 
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.500);
+}
 
 section#form-area #submit-button:hover {
     background-color: var(--cor1);
     color: var(--cor4);
     transition: 0.3s;
+    transform: translate(0px, -5px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+    transition: transform .2s, border 1s;
 }
