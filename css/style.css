@@ -146,13 +146,13 @@ main {
 section.flex-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     align-content: center;
     overflow-wrap: break-word;
     padding: 15px 10px;
     height: 88vh;
     min-height: 700px;
-    ;
     text-align: center;
     margin: auto;
     background-image: url(../img/bg-mobile.jpg);
@@ -169,8 +169,6 @@ div.flex-items {
 div.flex-items>p {
     padding: 20px;
     font-size: 1.2em;
-    width: 400px;
-
     margin: auto;
 }
 
