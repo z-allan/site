@@ -29,10 +29,10 @@
     </header>
     <main>
         <section class="flex-container">
-            <div class="item-0"></div>
             <div class="flex-items item-1">
                 <h2>Seja bem vindo!</h2>
-                <p>Este site foi desenvolvido com o intuito de demostrar conhecimentos relacionados a HTML5 e CSS3, sem utilização frameworks ou bibliotecas.</p>
+                <p>Este site foi desenvolvido com o intuito de demostrar conhecimentos relacionados a HTML5 e CSS3, sem
+                    utilização de frameworks ou bibliotecas.</p>
             </div>
             <div class="flex-items item-2">
                 <p>Se você deseja conhecer um pouco do meu trabalho</p>
@@ -44,10 +44,10 @@
             </div>
         </section>
         <section id="form-area">
-            <iframe name="dummyframe" id="dummyframe" onload="document.getElementById('form').reset()"></iframe>
+            <iframe name="dummyframe" id="dummyframe" onload="document.getElementById('form').reset();"></iframe>
             <form id="form"
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSemB98eiqnr6gOF20RGNIiGOv8LT6GjNJzOPcCY07FPoaFeQw/formResponse"
-                target="dummyframe" onsubmit="alert('Obrigado!');" method="POST">
+                target="dummyframe" onsubmit="document.getElementById('popup1').classList.add('show')" method="POST">
                 <h2>Formulário de Contato</h2>
                 <p>Seu nome:</p>
                 <input type="text" name="entry.644179727" size=40 maxlength="40" placeholder="José da Silva" required />
@@ -86,6 +86,17 @@
                 <label for="checkbox-other">Outros</label>
                 <br>
                 <input type="submit" id="submit-button" value="ENVIAR" />
+
+
+                <div id="popup1" class="overlay" onclick="document.getElementById('popup1').classList.remove('show')">
+                    <div class="popup">
+                        <h2>Sucesso!</h2>
+                        <a class="close" href="#form">&times;</a>
+                        <div class="content">
+                            Obrigado pela mensagem. <br> Ela será respondida o mais rápido possível.
+                        </div>
+                    </div>
+                </div>
             </form>
         </section>
     </main>

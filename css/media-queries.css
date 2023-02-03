@@ -9,6 +9,11 @@
 
 @media screen and (min-width: 768px) {
     /* ALTERAR O MENU */
+    body {
+        background-image: linear-gradient(to bottom, var(--cor2) 25%, var(--cor4));
+        min-width: 320px;
+    }
+
     header > div#menu-container > label.burger-button {
         display: none;
     }
@@ -41,6 +46,14 @@
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     /* TABLET */
+    section.flex-container  {
+        background-image: url(../img/bg-tablet.jpg);
+        background-position: bottom center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
     div.item-1 {
         flex: 1 1 100%;
     }
@@ -55,19 +68,21 @@
         background-color: var(--cor2);
     }
 
-    div.item-0 {
-        background-image: url(../img/bg-tablet.jpg);
-        background-position: bottom center;
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+    
 }
 
 @media screen and (min-width: 992px) and (max-width: 1440px) {
     /* PC */
     header>nav {
         text-align: center;
+    }
+
+    section.flex-container  {
+        background-image: url(../img/bg-pc.jpg);
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     div.item-1 {
@@ -94,13 +109,7 @@
         margin: auto;
     }
 
-    div.item-0 {
-        background-image: url(../img/bg-pc.jpg);
-        background-position: center center;
-        background-attachment: fixed;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+    
     
 
 }
@@ -109,6 +118,14 @@
     /* TV */
     header>nav {
         text-align: center;
+    }
+
+    section.flex-container  {
+        background-image: url(../img/bg-pc.jpg);
+        background-position: bottom center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     div.item-1 {
@@ -135,11 +152,6 @@
         margin: auto;
     }
 
-    div.item-0 {
-        background-image: url(../img/bg-tv.jpg);
-        background-position: left top;
-        background-attachment: fixed;
-        background-repeat: no-repeat;
-    }
+    
 
 }

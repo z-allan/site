@@ -23,9 +23,15 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, var(--cor2) 25%, var(--cor4));
+    background-color: #6f96a670;
     min-width: 320px;
 }
+
+/*  ################
+    #              #
+    #     MENU     #
+    #              #
+    ################ */
 
 header {
     background-color: var(--cor2);
@@ -125,44 +131,35 @@ input#checkbox-burger:checked~nav {
     z-index: 999;
 }
 
-
-/*
-
-    MAIN AREA - CTA
-
-*/
+/*  ###########################
+    #                         #
+    #     MAIN AREA - CTA     #
+    #                         #
+    ########################### */
 
 main {
     background-color: whitesmoke;
-    z-index: -1;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
+    z-index: -1;
 }
 
 section.flex-container {
     display: flex;
     flex-wrap: wrap;
-    padding: 15px 10px;
-    height: 88vh;
     align-items: center;
     align-content: center;
+    overflow-wrap: break-word;
+    padding: 15px 10px;
+    height: 88vh;
+    min-height: 700px;
+    ;
     text-align: center;
     margin: auto;
-    position: relative;
-}
-
-div.item-0 {
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
     background-image: url(../img/bg-mobile.jpg);
     background-position: center top;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.4;
-    z-index: 1;
 }
 
 div.flex-items {
@@ -172,7 +169,8 @@ div.flex-items {
 div.flex-items>p {
     padding: 20px;
     font-size: 1.2em;
-    width: 350px;
+    width: 400px;
+
     margin: auto;
 }
 
@@ -181,19 +179,19 @@ div.flex-items>a {
     font-size: 1.8em;
     margin: 20px auto;
     text-decoration: none;
-    background-color: var(--cor4);
+    background-color: var(--cor2);
+    color: var(--cor1);
     width: 225px;
     padding: 15px;
     border-radius: 40px;
-    color: var(--cor5);
-    text-shadow: 0px 0px 5px rgba(252, 255, 104, 0.55); 
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.623);
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
 }
 
 div.flex-items>a:hover {
-    background-color: var(--cor2);
-    color: var(--cor1);
-    text-shadow: 0px 0px 10px rgba(0,0,0,0.5); ;
+    background-color: var(--cor5);
+    color: var(--cor4);
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
     transform: translate(0px, -5px);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
     transition: transform .2s, border 1s;
@@ -201,9 +199,9 @@ div.flex-items>a:hover {
 
 div.item-1 {
     flex: 1 1 100%;
-    color: var(--cor4);
+    color: var(--cor1);
     font-weight: 500;
-    text-shadow: 0px 0px 7px rgba(242, 242, 242, 0.550);
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
 }
 
 
@@ -215,26 +213,26 @@ div.item-1>h2 {
 }
 
 div.item-2 {
-    color: var(--cor4);
+    color: var(--cor1);
     font-weight: 700;
-    text-shadow: 0px 0px 7px rgba(242, 242, 242, 0.550);
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
     flex: 1 1 100%;
 }
 
 div.item-3 {
-    color: var(--cor4);
+    color: var(--cor1);
     font-weight: 700;
-    text-shadow: 0px 0px 7px rgba(242, 242, 242, 0.550);
+    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
     flex: 1 1 100%;
 }
 
 
 
-/*
-
-    MAIN AREA - FORM
-
-*/
+/*  ############################
+    #                          #
+    #     MAIN AREA - FORM     #
+    #                          #
+    ############################ */
 
 #dummyframe {
     display: none;
@@ -293,3 +291,77 @@ section#form-area #submit-button:hover {
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
     transition: transform .2s, border 1s;
 }
+
+/*  ###########################
+    #                         #
+    #     MSG SUBMIT FORM     #
+    #                         #
+    ########################### */
+
+.overlay {
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    display: none;
+    opacity: 0;
+}
+
+.overlay.show {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 1;
+    z-index: 999;
+}
+
+.popup {
+    margin: 150px auto;
+    padding: 20px;
+    background: #00ff15;
+    border-radius: 5px;
+    width: 75%;
+    position: relative;
+    transition: all 2s ease-in-out;
+}
+
+.popup h2 {
+    font-size: 2em;
+    margin-top: 0;
+    color: var(--cor4);
+    padding: 5px;
+}
+
+.popup .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+    transition: all 200ms;
+}
+
+.popup .close:hover {
+    color: #06D85F;
+}
+
+.popup .content {
+    font-size: 1.25em;
+    text-align: center;
+    overflow: auto;
+    color: var(--cor4);
+    padding: 20px 0px;
+    
+}
+
+
+/*  ########################
+    #                      #
+    #     ABOUT SCREEN     #
+    #                      #
+    ######################## */
