@@ -244,13 +244,18 @@ section#form-area {
 
 section#form-area h2 {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 
 section#form-area label.question {
     display: inline-block;
     padding: 15px 2px 5px;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+
+section#form-area label.answer {
+    padding: 0px 5px;
+    font-size: 1.1em;
 }
 
 section#form-area input[type=text],
@@ -260,7 +265,7 @@ select,
 textarea {
     width: 100%;
     display: block;
-    padding: 0.5rem 0.75rem;
+    padding: 1.2em;
     border-radius: 10px;
 }
 
@@ -273,7 +278,7 @@ section#form-area textarea {
 section#form-area #submit-button {
     margin-top: 30px;
     padding: 15px 5px;
-    font-size: 1.2em;
+    font-size: 1.5em;
     font-weight: 600;
     border: none;
     border: none;
