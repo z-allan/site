@@ -244,10 +244,13 @@ section#form-area {
 
 section#form-area h2 {
     text-align: center;
+    font-size: 1.5em;
 }
 
-section#form-area p {
-    padding: 15px 0px 5px;
+section#form-area label.question {
+    display: inline-block;
+    padding: 15px 2px 5px;
+    font-size: 1em;
 }
 
 section#form-area input[type=text],
@@ -269,8 +272,8 @@ section#form-area textarea {
 
 section#form-area #submit-button {
     margin-top: 30px;
-    padding: 1rem 3rem;
-    font-size: 1em;
+    padding: 15px 5px;
+    font-size: 1.2em;
     font-weight: 600;
     border: none;
     border: none;

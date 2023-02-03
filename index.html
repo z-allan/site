@@ -23,7 +23,7 @@
             <nav>
                 <a href="#">Home</a>
                 <a href="#">Sobre</a>
-                <a href="#form-area">Contato</a>
+                <a href="#form">Contato</a>
             </nav>
         </div>
     </header>
@@ -40,7 +40,7 @@
             </div>
             <div class="flex-items item-3">
                 <p>Ou, vamos bater um papo</p>
-                <a href="#">Contato</a>
+                <a href="#form">Contato</a>
             </div>
         </section>
         <section id="form-area">
@@ -49,29 +49,32 @@
                 action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSemB98eiqnr6gOF20RGNIiGOv8LT6GjNJzOPcCY07FPoaFeQw/formResponse"
                 target="dummyframe" onsubmit="document.getElementById('popup1').classList.add('show')" method="POST">
                 <h2>Formulário de Contato</h2>
-                <p>Seu nome:</p>
-                <input type="text" name="entry.644179727" size=40 maxlength="40" placeholder="José da Silva" required />
-                <p>Seu e-mail:</p>
-                <input type="email" name="entry.453179510" size=40 maxlength="40" placeholder="contato@teste.com"
+                <label for="name" class="question">Seu nome:</label>
+                <input id='name' type="text" name="entry.644179727" size=40 maxlength="40" placeholder="José da Silva"
                     required />
-                <p>Qual a sua necessidade:</p>
-                <textarea name="entry.2007835393" cols="30" rows="4" required
+                <label form="email" class="question">Seu e-mail:</label>
+                <input id="email" type="email" name="entry.453179510" size=40 maxlength="40"
+                    placeholder="contato@teste.com" required />
+                <label for="comment" class="question"> Qual a sua necessidade:</label>
+                <textarea id="comment" name="entry.2007835393" cols="30" rows="4" required
                     placeholder="Gostaria de bater um papo com você."></textarea>
-                <p>Posso atuar remotamente?</p>
+                <label for="remote-radio1" class="question">Posso atuar remotamente?</label>
+                <br>
                 <input type="radio" class="checks" name="entry.1349308541" value="Sim" id="remote-radio1" />
                 <label for="remote-radio1">Sim</label>
                 <br>
                 <input type="radio" class="checks" name="entry.1349308541" value="Nao" id="remote-radio2" />
                 <label for="remote-radio2">Não</label>
                 <br>
-                <p>Que tipo de atuação você necessita:</p>
-                <select name="entry.1385929678">
+                <label for="type" class="question">Que tipo de atuação você necessita:</label>
+                <select id="type" name="entry.1385929678">
                     <option value="-">-</option>
                     <option value="Front-End">Front-End</option>
                     <option value="Back-End">Back-End</option>
                     <option value="Full-Stack">Full-Stack</option>
                 </select>
-                <p>Outros conhecimentos necessários:</p>
+                <label for="checkbox-other" class="question">Outros conhecimentos necessários:</label>
+                <br>
                 <input type="checkbox" class="checks" id="checkbox-do" name="entry.270987808" value="DevOps">
                 <label for="checkbox-do">DevOps</label>
                 <br>
