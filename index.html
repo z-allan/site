@@ -13,7 +13,7 @@
 <body>
     <header>
         <div id="menu-container">
-            <h1 id="nome">v1</h1>
+            <h1 id="nome">v1.1</h1>
             <input type="checkbox" id="checkbox-burger" />
             <label class="burger-button" for="checkbox-burger">
                 <span></span>
@@ -67,12 +67,12 @@
                 <label for="remote-radio2" class="answer">Não</label>
                 <br>
                 <label for="type" class="question">Que tipo de atuação você necessita:</label>
-                <select id="type" name="entry.1385929678">
-                    <option value="-">-</option>
-                    <option value="Front-End">Front-End</option>
-                    <option value="Back-End">Back-End</option>
-                    <option value="Full-Stack">Full-Stack</option>
-                </select>
+                <input type="text" name="entry.1385929678" id="type" list="typelist">
+                <datalist id="typelist">
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Full-Stack</option>
+                </datalist>
                 <label for="checkbox-other" class="question">Outros conhecimentos necessários:</label>
                 <br>
                 <input type="checkbox" class="checks" id="checkbox-do" name="entry.270987808" value="DevOps">
