@@ -35,36 +35,59 @@
         font-size: 1.2rem;
         color: var(--cor4);
         background-color: var(--cor2);
-        border: 0px;
+        border-radius: 10px;
     }
 
-    header>div#menu-container>nav>a:hover {
-        color: var(--cor1);
-        background-color: var(--cor2);
-        border: 0px;
+    @media (hover: hover) {
+        header>div#menu-container>nav>a:hover {
+            color: var(--cor1);
+            background-color: var(--cor4);
+            border: 0px;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+            transform: translate(0px, 5px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+            transition: transform .2s, border 1s;
+            border-radius: 10px;
+        }
     }
+
+    @media (hover: none) {
+        header>div#menu-container>nav>a:active {
+            color: var(--cor1);
+            background-color: var(--cor4);
+            border: 0px;
+            text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+            transform: translate(0px, 5px);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
+            transition: transform .2s, border 1s;
+            border-radius: 10px;
+        }
+    }
+
 
     /* TABLET */
     section.flex-container {
         background-image: url(../img/bg-tablet.jpg);
-        background-position: bottom center;
+        background-position: center bottom;
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     div.item-1 {
-        flex: 1 1 100%;
+        font-size: 1.25em;
+    }
+
+    div.item-1>p {
+        width: 500px;
     }
 
     div.item-2 {
-        flex: 1 1 50%;
-        background-color: var(--cor3);
+        font-size: 1.25em;
     }
 
     div.item-3 {
-        flex: 1 1 50%;
-        background-color: var(--cor2);
+        font-size: 1.25em;
     }
 
 
