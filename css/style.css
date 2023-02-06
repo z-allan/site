@@ -138,12 +138,25 @@ input#checkbox-burger:checked~nav {
     ########################### */
 
 main {
-    background-color: whitesmoke;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
-    z-index: -1;
+}
+
+div.bg-img {
+    position: fixed;
+    background-image: url(../img/bg-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -100;
 }
 
 section.flex-container {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -155,15 +168,6 @@ section.flex-container {
     min-height: 700px;
     text-align: center;
     margin: auto;
-    background-image: url(../img/bg-mobile.jpg);
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 
 div.flex-items {
