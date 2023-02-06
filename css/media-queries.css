@@ -73,6 +73,7 @@
         background-position: bottom right;
         background-size: cover;
         background-repeat: no-repeat;
+        min-height: 760px;
     }
 
     div.flex-items>a {
