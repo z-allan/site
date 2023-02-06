@@ -158,13 +158,19 @@ section.flex-container {
     text-align: center;
     margin: auto;
     background-image: url(../img/bg-mobile.jpg);
+    background-attachment: fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-position: center;
-    background-attachment: scroll;
     background-repeat: no-repeat;
+}
+
+@supports (-webkit-overflow-scrolling: touch) {
+    section.flex-container {
+        background-attachment: scroll;
+    }
 }
 
 div.flex-items {

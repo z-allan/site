@@ -69,7 +69,6 @@
     section.flex-container {
         background-image: url(../img/bg-tablet.jpg);
         background-position: bottom right;
-        background-attachment: scroll;
         background-size: cover;
         background-repeat: no-repeat;
     }
@@ -114,9 +113,6 @@
         width: 3%;
     }
 
-
-
-
 }
 
 @media screen and (min-width: 950px) {
@@ -128,34 +124,32 @@
 
     section.flex-container {
         background-image: url(../img/bg-pc.jpg);
-        background-position: center center;
-        background-attachment: fixed;
+        background-position: left bottom;
         background-size: cover;
         background-repeat: no-repeat;
     }
 
     div.item-1 {
-        flex: 1 1 100%;
+        font-size: 1.4em;
+    }
+
+    div.item-1>p {
+        width: 700px;
     }
 
     div.item-2 {
-        flex: 1 1 50%;
-        background-color: var(--cor3);
+        font-size: 1.4em;
     }
 
     div.item-3 {
-        flex: 1 1 50%;
-        background-color: var(--cor2);
+        font-size: 1.3em;
     }
 
-    div#menu-container {
-        max-width: 1000px;
-        margin: auto;
-    }
-
-    main {
-        max-width: 1000px;
-        margin: auto;
+    input[type=radio],
+    input[type=checkbox] {
+        border: 0px;
+        height: 1.2em;
+        width: 3%;
     }
 
 
