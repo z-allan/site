@@ -8,17 +8,18 @@
 */
 
 @media screen and (min-width: 768px) {
+
     /* ALTERAR O MENU */
     body {
         background-image: linear-gradient(to bottom, var(--cor2) 25%, var(--cor4));
         min-width: 320px;
     }
 
-    header > div#menu-container > label.burger-button {
+    header>div#menu-container>label.burger-button {
         display: none;
     }
 
-    header > div#menu-container > nav {
+    header>div#menu-container>nav {
         position: relative;
         top: 0px;
         display: flex;
@@ -28,7 +29,7 @@
         transform: scaleX(1);
     }
 
-    header > div#menu-container > nav > a {
+    header>div#menu-container>nav>a {
         padding: 10px;
         align-self: center;
         font-size: 1.2rem;
@@ -37,16 +38,14 @@
         border: 0px;
     }
 
-    header > div#menu-container > nav > a:hover {
+    header>div#menu-container>nav>a:hover {
         color: var(--cor1);
         background-color: var(--cor2);
         border: 0px;
     }
-}
 
-@media screen and (min-width: 768px) and (max-width: 992px) {
     /* TABLET */
-    section.flex-container  {
+    section.flex-container {
         background-image: url(../img/bg-tablet.jpg);
         background-position: bottom center;
         background-attachment: fixed;
@@ -68,16 +67,17 @@
         background-color: var(--cor2);
     }
 
-    
+
 }
 
-@media screen and (min-width: 992px) and (max-width: 1440px) {
+@media screen and (min-width: 950px) {
+
     /* PC */
     header>nav {
         text-align: center;
     }
 
-    section.flex-container  {
+    section.flex-container {
         background-image: url(../img/bg-pc.jpg);
         background-position: center center;
         background-attachment: fixed;
@@ -109,18 +109,19 @@
         margin: auto;
     }
 
-    
-    
+
+
 
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1200px) {
+
     /* TV */
     header>nav {
         text-align: center;
     }
 
-    section.flex-container  {
+    section.flex-container {
         background-image: url(../img/bg-pc.jpg);
         background-position: bottom center;
         background-attachment: fixed;
@@ -152,6 +153,6 @@
         margin: auto;
     }
 
-    
+
 
 }

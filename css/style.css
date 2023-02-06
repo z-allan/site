@@ -156,7 +156,7 @@ section.flex-container {
     text-align: center;
     margin: auto;
     background-image: url(../img/bg-mobile.jpg);
-    background-position: center top;
+    background-position: bottom right;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
