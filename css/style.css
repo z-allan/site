@@ -262,19 +262,26 @@ section#form-area label.question {
 
 section#form-area label.answer {
     padding: 0px 5px;
-    font-size: 1em;
+    font-size: 1.1em;
 }
+
+input[type=radio],
+input[type=checkbox] {
+    border: 0px;
+    height: 1.2em;
+    width: 5%;
+}
+
 
 section#form-area input[type=text],
 input[type=email],
 input[type=submit],
-select,
-option,
 textarea {
     width: 100%;
     display: block;
-    padding: 1.2em;
+    padding: 0.75em;
     border-radius: 10px;
+    font-size: 1.1em;
 }
 
 section#form-area textarea {
@@ -307,8 +314,6 @@ section#form-area #submit-button {
         transition: transform .2s, border 1s;
     }
 }
-
-
 
 /*  ###########################
     #                         #
