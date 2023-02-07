@@ -57,6 +57,15 @@ h1#nome {
     flex: 1 1 90%;
 }
 
+/* VERIFICA SE EXISTE HOVER NO DISPOSITIVO, SENÃO O EFEITO FICA TRAVADO */
+@media (hover: hover) {
+    h1#nome:hover {
+        color: var(--cor1);
+        text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.534);
+        transition: color .5s;
+    }
+}
+
 label.burger-button {
     padding: 15px 10px;
 }
@@ -94,6 +103,7 @@ div#menu-container>nav>a {
     cursor: pointer;
 }
 
+/* VERIFICA SE EXISTE HOVER NO DISPOSITIVO, SENÃO O EFEITO FICA TRAVADO */
 @media (hover: hover) {
     div#menu-container>nav>a:hover {
         background-color: var(--cor5);
@@ -133,14 +143,13 @@ input#checkbox-burger:checked~nav {
     z-index: 999;
 }
 
-/*  ###########################
-    #                         #
-    #     MAIN AREA - CTA     #
-    #                         #
-    ########################### */
+/*  #############
+    #           #
+    #    CTA    #
+    #           #
+    ############# */
 
 main {
-    background-color: whitesmoke;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
     z-index: -1;
 }
@@ -154,7 +163,7 @@ section.flex-container {
     overflow-wrap: break-word;
     padding: 15px 10px;
     height: 88vh;
-    min-height: 700px;
+    min-height: 750px;
     text-align: center;
     margin: auto;
     background-image: url(../img/bg-mobile.jpg);
@@ -167,6 +176,7 @@ section.flex-container {
     background-repeat: no-repeat;
 }
 
+/* ALGUNS DISPOSITIVOS MOBILE NÃO POSSUEM 'FIXED' E CASO ESTEJA ESSA OPÇÃO ELE DEIXA A IMAGEM BUGADA */
 @supports (-webkit-overflow-scrolling: touch) {
     section.flex-container {
         background-attachment: scroll;
@@ -175,6 +185,8 @@ section.flex-container {
 
 div.flex-items {
     z-index: 2;
+    text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.55);
+    color: var(--cor1);
 }
 
 div.flex-items>p {
@@ -193,57 +205,49 @@ div.flex-items>a {
     width: 225px;
     padding: 15px;
     border-radius: 40px;
-    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.623);
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.623);
+    text-shadow: 0px 0px 6px rgba(0, 0, 0, 0.623);
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.623);
 }
 
 @media (hover: hover) {
     div.flex-items>a:hover {
         background-color: var(--cor5);
         color: var(--cor4);
-        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+        text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.637);
         transform: translate(0px, -5px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-        transition: transform .2s, border 1s;
+        transition: transform .2s, border 1s, color .25s;
     }
 }
 
 div.item-1 {
     flex: 1 1 100%;
-    color: var(--cor1);
     font-weight: 500;
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
 }
 
 
 div.item-1>h2 {
     font-size: 2.5em;
-    color: var(--cor1);
-    text-shadow: 0px 0px 7px rgba(45, 57, 64, 0.550);
     font-weight: 800;
 }
 
 div.item-2 {
-    color: var(--cor1);
-    font-weight: 700;
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
+    font-weight: 600;
     flex: 1 1 100%;
 }
 
 div.item-3 {
-    color: var(--cor1);
-    font-weight: 700;
-    text-shadow: 0px 0px 7px rgba(0, 0, 0, 0.55);
+    font-weight: 500;
     flex: 1 1 100%;
 }
 
 
 
-/*  ############################
-    #                          #
-    #     MAIN AREA - FORM     #
-    #                          #
-    ############################ */
+/*  ##############
+    #            #
+    #    FORM    #
+    #            #
+    ############## */
 
 #dummyframe {
     display: none;
@@ -287,7 +291,7 @@ textarea {
     display: block;
     padding: 0.75em;
     border-radius: 10px;
-    font-size: 1.1em;
+    font-size: 1em;
 }
 
 section#form-area textarea {
@@ -298,7 +302,7 @@ section#form-area textarea {
 
 section#form-area #submit-button {
     margin-top: 30px;
-    padding: 15px 5px;
+    padding: 0.7em;
     font-size: 1.5em;
     font-weight: 600;
     border: none;
@@ -314,18 +318,17 @@ section#form-area #submit-button {
     section#form-area #submit-button:hover {
         background-color: var(--cor1);
         color: var(--cor4);
-        transition: 0.3s;
         transform: translate(0px, -5px);
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.623);
-        transition: transform .2s, border 1s;
+        transition: transform .2s, border 1s, color .5s;
     }
 }
 
-/*  ###########################
-    #                         #
-    #     MSG SUBMIT FORM     #
-    #                         #
-    ########################### */
+/*  ############################
+    #                          #
+    #     MSG AFTER SUBMIT     #
+    #                          #
+    ############################ */
 
 .overlay {
     height: 100%;
@@ -345,16 +348,17 @@ section#form-area #submit-button {
     justify-content: flex-end;
     opacity: 1;
     z-index: 999;
+    transition: all 2s ease-in-out;
 }
 
 .popup {
     margin: 150px auto;
     padding: 20px;
-    background: #00ff15;
+    background: #9cf7a3;
     border-radius: 5px;
-    width: 75%;
+    width: 50%;
+    max-width: 500px;
     position: relative;
-    transition: all 2s ease-in-out;
 }
 
 .popup h2 {
