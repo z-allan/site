@@ -31,7 +31,7 @@ body {
     #              #
     #     MENU     #
     #              #
-    ################ */
+    ################ */ 
 
 header {
     background-color: var(--cor2);
@@ -55,7 +55,7 @@ h1#nome {
     padding: 15px 11px;
     color: var(--cor4);
     font-size: 2.1em;
-    flex: 1 1 90%;
+    flex: 1 1 32%;
 }
 
 /* VERIFICA SE EXISTE HOVER NO DISPOSITIVO, SENÃO O EFEITO FICA TRAVADO */
@@ -150,7 +150,7 @@ input#checkbox-burger:checked~nav {
     #           #
     ############# */
 
-main {
+main#index {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.466);
     z-index: -1;
 }
@@ -400,3 +400,49 @@ section#form-area #submit-button {
     #     ABOUT SCREEN     #
     #                      #
     ######################## */
+
+.pc {
+    display: none;
+}
+
+main#about > section {
+    padding: 1.25em;
+}
+
+main#about > section > h2 {
+    padding: 0.75em 0px 0px 0px;
+    font-size: 1.5em;
+    color: var(--cor4);
+}
+
+main#about > section > hr {
+    margin: 0px 0px 0.75em 0px;
+    color: var(--cor2);
+    border-style: solid;
+}
+
+main#about > section > p {
+    font-size: 1.1em;
+    text-indent: 1em;
+    text-align: justify;
+    color: var(--cor4);
+    hyphens: auto;
+}
+
+main#about > section > .note {
+    border: 1px solid var(--cor4);
+    padding: 10px;
+    text-indent: 0;
+    background-color: var(--cor5);
+    margin: -1.1em 0px;
+}
+
+div.container-social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.mobile.social img {
+    width: 75px;
+}
