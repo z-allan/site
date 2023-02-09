@@ -24,7 +24,7 @@
 
 body {
     background-color: #6f96a670;
-    min-width: 320px;
+    min-width: 295px;
 }
 
 /*  ################
@@ -49,11 +49,12 @@ div#menu-container {
     height: 80px;
 }
 
+
 h1#nome {
     font-family: var(--fonte-icon);
     padding: 15px 11px;
     color: var(--cor4);
-    font-size: 2.5em;
+    font-size: 2.1em;
     flex: 1 1 90%;
 }
 
@@ -176,8 +177,9 @@ section.flex-container {
     background-repeat: no-repeat;
 }
 
-/* ALGUNS DISPOSITIVOS MOBILE NÃO POSSUEM 'FIXED' E CASO ESTEJA ESSA OPÇÃO ELE DEIXA A IMAGEM BUGADA */
-@supports (-webkit-overflow-scrolling: touch) {
+/* Para todos dispositivos mobile vou deixar a imagem de fundo fixa em vez de efeito paralax, testei em alguns celulares e fica travado e quando não funcionar ele deixa a imagem com zoom e desfocada */
+/*@supports (-webkit-overflow-scrolling: touch) {*/
+@media (hover: none) {
     section.flex-container {
         background-attachment: scroll;
     }
@@ -197,7 +199,7 @@ div.flex-items>p {
 
 div.flex-items>a {
     display: block;
-    font-size: 1.8em;
+    font-size: 1.5em;
     margin: 20px auto;
     text-decoration: none;
     background-color: var(--cor2);
@@ -227,7 +229,7 @@ div.item-1 {
 
 
 div.item-1>h2 {
-    font-size: 2.5em;
+    font-size: 2.1em;
     font-weight: 800;
 }
 
@@ -302,7 +304,7 @@ section#form-area textarea {
 
 section#form-area #submit-button {
     margin-top: 30px;
-    padding: 0.7em;
+    padding: 0.5em;
     font-size: 1.5em;
     font-weight: 600;
     border: none;
