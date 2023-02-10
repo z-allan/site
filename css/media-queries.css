@@ -153,9 +153,17 @@
         margin: 0px 0px 1em 0px;
     }
 
+    main#about > section > ul > li {
+        font-size: 1.25em;
+    }
+
     main#about > section > p {
         font-size: 1.25em;
         text-indent: 1.5em;
+    }
+
+    .img-site {
+        width: 250px;
     }
 
 }
@@ -283,9 +291,18 @@
         margin: 0px 0px 1.5em 0px;
     }
 
+    main#about > section > ul > li {
+        font-size: 1.4em;
+    }
+
     main#about > section > p {
         font-size: 1.4em;
         text-indent: 1.75em;
+    }
+
+    .img-site {
+        width: 350px;
+        padding: 3em 0;
     }
 
 }

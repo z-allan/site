@@ -421,9 +421,15 @@ main#about > section > hr {
     border-style: solid;
 }
 
+main#about > section > ul > li {
+    font-size: 1.1em;
+    list-style: inside;
+    list-style-type: none;
+}
+
 main#about > section > p {
     font-size: 1.1em;
-    text-indent: 1em;
+    text-indent: 1.4em;
     text-align: justify;
     color: var(--cor4);
     hyphens: auto;
@@ -435,6 +441,21 @@ main#about > section > .note {
     text-indent: 0;
     background-color: var(--cor5);
     margin: -1.1em 0px;
+}
+
+.img-site {
+    display: block;
+    width: 175px;
+    margin: auto;
+    padding: 1em 0px;
+}
+
+
+.link-img-proj > img {
+    display: block;
+    max-width: 300px;
+    margin: auto;
+    padding: 15px 5px;
 }
 
 div.container-social {
