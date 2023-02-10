@@ -31,7 +31,7 @@ body {
     #              #
     #     MENU     #
     #              #
-    ################ */ 
+    ################ */
 
 header {
     background-color: var(--cor2);
@@ -405,29 +405,29 @@ section#form-area #submit-button {
     display: none;
 }
 
-main#about > section {
+main#about>section {
     padding: 1.25em;
 }
 
-main#about > section > h2 {
+main#about>section>h2 {
     padding: 0.75em 0px 0px 0px;
     font-size: 1.5em;
     color: var(--cor4);
 }
 
-main#about > section > hr {
+main#about>section>hr {
     margin: 0px 0px 0.75em 0px;
     color: var(--cor2);
     border-style: solid;
 }
 
-main#about > section > ul > li {
+main#about>section>ul>li {
     font-size: 1.1em;
     list-style: inside;
     list-style-type: none;
 }
 
-main#about > section > p {
+main#about>section>p {
     font-size: 1.1em;
     text-indent: 1.4em;
     text-align: justify;
@@ -435,7 +435,7 @@ main#about > section > p {
     hyphens: auto;
 }
 
-main#about > section > .note {
+main#about>section>.note {
     border: 1px solid var(--cor4);
     padding: 10px;
     text-indent: 0;
@@ -451,7 +451,7 @@ main#about > section > .note {
 }
 
 
-.link-img-proj > img {
+.link-img-proj {
     display: block;
     max-width: 300px;
     margin: auto;
