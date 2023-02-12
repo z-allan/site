@@ -78,7 +78,7 @@
         display: flex;
         justify-content: space-evenly;
         align-items: center;
-    
+
     }
 
     section#telefone {
@@ -108,7 +108,7 @@
         text-align: center;
     }
 
-    .pc.features > iframe {
+    .pc.features>iframe {
         display: block;
         width: 100%;
         margin: 1em 0;
@@ -179,27 +179,27 @@
         height: 1.2em;
         width: 3%;
     }
-    
+
     /*  ########################
         #                      #
         #     ABOUT SCREEN     #
         #                      #
         ######################## */
 
-    main#about > section > h2 {
+    main#about>section>h2 {
         padding: 1em 0px 0px 0px;
         font-size: 1.75em;
     }
-    
-    main#about > section > hr {
+
+    main#about>section>hr {
         margin: 0px 0px 1em 0px;
     }
 
-    main#about > section > ul > li {
+    main#about>section>ul>li {
         font-size: 1.25em;
     }
 
-    main#about > section > p {
+    main#about>section>p {
         font-size: 1.25em;
         text-indent: 1.5em;
     }
@@ -217,7 +217,7 @@
         #    MENU    #
         #            #
         ############## */
-        
+
     header>nav {
         text-align: center;
     }
@@ -324,20 +324,20 @@
         padding: 1em 7em;
     }
 
-    main#about > section > h2 {
+    main#about>section>h2 {
         padding: 1.5em 0px 0px 0px;
         font-size: 1.75em;
     }
-    
-    main#about > section > hr {
+
+    main#about>section>hr {
         margin: 0px 0px 1.5em 0px;
     }
 
-    main#about > section > ul > li {
+    main#about>section>ul>li {
         font-size: 1.4em;
     }
 
-    main#about > section > p {
+    main#about>section>p {
         font-size: 1.4em;
         text-indent: 1.75em;
     }
@@ -350,7 +350,7 @@
 }
 
 @media screen and (min-height: 1400px) {
-    
+
     /*  ##############
         #            #
         #    MENU    #
@@ -378,19 +378,12 @@
 
     div.flex-items>a {
         font-size: 2em;
-        text-decoration: none;
         width: 400px;
         padding: 12px;
     }
 
-    section#form-area {
-        padding: 9vh 3vw;
-        background-color: var(--cor4);
-        color: var(--cor1);
-    }
-
     div.item-1 {
-        font-size: 1.75em;
+        font-size: 1.7em;
     }
 
     div.item-1>h2 {
@@ -424,22 +417,26 @@
         #            #
         ############## */
 
+    section#form-area {
+        padding: 10vh 7vw;
+    }
+
     section#form-area h2 {
         font-size: 3em;
     }
 
     section#form-area label.question {
-        font-size: 1.75em;
+        font-size: 1.25em;
     }
 
     section#form-area label.answer {
-        font-size: 1.75em;
+        font-size: 1.25em;
     }
 
     input[type=radio],
     input[type=checkbox] {
         border: 0px;
-        height: 1.4em;
+        height: 1.1em;
         width: 3%;
     }
 
@@ -447,7 +444,7 @@
     input[type=email],
     input[type=submit],
     textarea {
-        font-size: 1.3em;
+        font-size: 1.2em;
     }
 
     section#form-area textarea {
