@@ -412,8 +412,8 @@ section#form-area #submit-button {
     display: none;
 }
 
-main#about>section {
-    padding: 1.25em;
+main#about {
+    padding: 1.5em 2.2em 3em 2.2em;
 }
 
 main#about>section>h2 {

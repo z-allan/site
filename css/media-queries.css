@@ -186,6 +186,10 @@
         #                      #
         ######################## */
 
+    main#about {
+        padding: 1em 2.2em 3em 2.2em;
+    }
+
     main#about>section>h2 {
         padding: 1em 0px 0px 0px;
         font-size: 1.75em;
@@ -223,12 +227,12 @@
     }
 
     h1#nome {
-        font-size: 3em;
+        font-size: 2.75em;
         flex: 1 1 39%;
     }
 
     div#menu-container>nav>a {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
     }
 
     div#menu-container {
@@ -285,21 +289,21 @@
         ############## */
 
     section#form-area h2 {
-        font-size: 2em;
+        font-size: 1.75em;
     }
 
     section#form-area label.question {
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
 
     section#form-area label.answer {
-        font-size: 1.4em;
+        font-size: 1.1em;
     }
 
     input[type=radio],
     input[type=checkbox] {
         border: 0px;
-        height: 1.4em;
+        height: 1.1em;
         width: 3%;
     }
 
@@ -307,7 +311,7 @@
     input[type=email],
     input[type=submit],
     textarea {
-        font-size: 1.2em;
+        font-size: 1em;
     }
 
     section#form-area textarea {
@@ -321,7 +325,7 @@
         ######################## */
 
     main#about {
-        padding: 1em 7em;
+        padding: 1em 7em 3em 7em;
     }
 
     main#about>section>h2 {
@@ -334,11 +338,11 @@
     }
 
     main#about>section>ul>li {
-        font-size: 1.4em;
+        font-size: 1.3em;
     }
 
     main#about>section>p {
-        font-size: 1.4em;
+        font-size: 1.3em;
         text-indent: 1.75em;
     }
 
@@ -350,21 +354,6 @@
 }
 
 @media screen and (min-height: 1400px) {
-
-    /*  ##############
-        #            #
-        #    MENU    #
-        #            #
-        ############## */
-
-    h1#nome {
-        font-size: 3.25em;
-        flex: 1 1 41%;
-    }
-
-    div#menu-container>nav>a {
-        font-size: 1.5rem;
-    }
 
     /*  #############
         #           #
