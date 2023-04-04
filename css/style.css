@@ -195,14 +195,14 @@ div.flex-items {
 }
 
 div.flex-items>p {
-    font-family: var(--fonte-cta);
+    font-family: var(--fonte-padrao);
     padding: 20px;
     font-size: 1.1em;
     margin: auto;
 }
 
 div.flex-items>a {
-    font-family: var(--fonte-cta);
+    font-family: var(--fonte-icon);
     font-weight: 500;
     display: block;
     font-size: 1.4em;
@@ -235,18 +235,18 @@ div.item-1 {
 
 
 div.item-1>h2 {
-    font-family: var(--fonte-icon);
+    font-family: var(--fonte-cta);
     font-size: 3em;
     font-weight: 800;
 }
 
 div.item-2 {
-    font-weight: 500;
+    font-weight: 400;
     flex: 1 1 100%;
 }
 
 div.item-3 {
-    font-weight: 500;
+    font-weight: 400;
     flex: 1 1 100%;
 }
 
