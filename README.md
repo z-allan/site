@@ -2,6 +2,8 @@
 <p>Este site foi desenvolvido utilizando apenas HTML e CSS.</p>
 <p>Tem a finalidade de colocar em prática os conhecimentos dessas ferramentas e centralizar informações úteis sobre mim.</P>
 
+<p>Link de acesso: <a href="https://z-allan.github.io/site/" target="_blank">https://z-allan.github.io/site/</a></p>
+
 <fieldset>
     <legend>Observações</legend>
     <ul>
